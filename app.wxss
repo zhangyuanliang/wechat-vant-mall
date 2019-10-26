@@ -1,0 +1,20 @@
+@import "./miniprogram_npm/vant-weapp/common/index.wxss";
+@import "./styles/common.wxss";
+@import "./styles/reset.wxss";
+
+.container {
+  height: 100%;
+  background: #f9f9f9;
+}
+
+page {
+  height: 100%;
+  font-size: 28rpx;
+  font-family: PingFang-SC-Regular,PingFang-SC;
+}
+
+view,
+cover-view,
+textarea {
+  box-sizing: border-box;
+}

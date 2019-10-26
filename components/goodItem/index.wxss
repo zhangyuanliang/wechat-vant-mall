@@ -1,0 +1,21 @@
+/* components/goodItem/index.wxss */
+.img-wrap {
+  width: 340rpx;
+  margin-top: 20rpx;
+  border-bottom-left-radius: 8rpx;
+  border-bottom-right-radius: 8rpx;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.img-wrap image {
+  width: 340rpx;
+  height: 320rpx;
+  background: #d8d8d8;
+  border-radius: 8rpx 8rpx 0px 0px;
+}
+
+.good-title {
+  margin-top: 12rpx;
+}

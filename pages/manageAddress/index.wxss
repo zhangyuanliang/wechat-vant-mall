@@ -1,0 +1,45 @@
+/* pages/manageAddress/index.wxss */
+.item {
+  height: 208rpx;
+}
+
+.cont-wrap {
+  height: 100%;
+  margin: 0 24rpx;
+  padding: 32rpx 0 36rpx 0;
+  border-bottom: 1px solid rgba(238,238,238,1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  width: 616rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.edit-icon {
+  width: 32rpx;
+  height: 34rpx;
+}
+
+.address {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #16110a;
+  line-height: 44rpx;
+}
+
+.van-swipe-cell__right {
+  display: inline-block;
+  justify-content: center;
+  height: 204rpx;
+  padding: 0 60rpx;
+  font-size: 32rpx;
+  line-height: 204rpx;
+  color: #fff;
+  background-color: #ff6e1f;
+}

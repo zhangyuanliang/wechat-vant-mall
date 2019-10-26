@@ -1,0 +1,12 @@
+<!--components/goodItem/index.wxml-->
+<view class="img-wrap">
+  <image src="{{goodItem.src}}"></image>
+  <view style="padding-left: 16rpx; width: 100%;">
+    <view class="good-title">
+      <text>商品名称</text>
+    </view>
+    <view class="good-price">
+      ¥ <text>199</text>
+    </view>
+  </view>
+</view>

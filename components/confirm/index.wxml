@@ -1,0 +1,16 @@
+<!--components/confirm/index.wxml-->
+<view class="pop mil-pop" wx:if="{{isShow}}">
+  <view class="pop-cont">
+    <view class="flex prompt">
+      <text>{{title}}</text>
+    </view>
+    <view class="flex-v btn-wrap">
+      <view bindtap="cancle" class="cancel-btn">
+        <view class="text">取消</view>
+      </view>
+      <view bindtap="confirm" class="confirm-btn">
+        <view class="text">确定</view>
+      </view>
+    </view>
+  </view>
+</view>

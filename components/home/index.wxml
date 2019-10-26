@@ -1,0 +1,78 @@
+<!--components/home/index.wxml-->
+
+<swiper
+  indicator-dots="{{true}}"
+  autoplay="{{true}}"
+  interval="{{2000}}"
+  duration="{{500}}"
+  indicator-color="#D8D8D8"
+  indicator-active-color="#FEAD19"
+  style="height: 310rpx; padding-top: 104rpx"
+>
+  <block wx:for="{{banners}}" wx:key="*this">
+    <swiper-item>
+      <image src="{{item}}" class="banner-img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="classification">
+  <image wx:if="{{aciveType === 'water'}}" class="water" src="/images/home/water-active.png"></image>
+  <image wx:else bindtap="changeType" data-type="water" class="water" src="/images/home/water.png"></image>
+  <image wx:if="{{aciveType === 'electric'}}" class="electric" src="/images/home/electric-active.png"></image>
+  <image wx:else bindtap="changeType" data-type="electric" class="electric" src="/images/home/electric.png"></image>
+</view>
+
+<view class="container-wrap">
+  <view wx:if="{{aciveType === 'water'}}" class="text-cls">
+    <view style="width: 84rpx; text-align: left">
+      <text bindtap="changTextType" data-type="all" class="{{activeText === 'all' ? 'active' : ''}}">
+        全部
+      </text>
+    </view>
+    <view style="width: 164rpx; text-align: center">
+      <text bindtap="changTextType" data-type="inWater" class="{{activeText === 'inWater' ? 'active' : ''}}">
+        进水及配件
+      </text>
+    </view>
+    <view style="width: 160rpx; text-align: center">
+      <text bindtap="changTextType" data-type="outWater" class="{{activeText === 'outWater' ? 'active' : ''}}">
+        排水及配件
+      </text>
+    </view>
+    <view style="width: 160rpx; text-align: center">
+      <text bindtap="changTextType" data-type="other" class="{{activeText === 'other' ? 'active' : ''}}">
+        其他辅料
+      </text>
+    </view>
+  </view>
+  <view wx:else class="text-cls">
+    <view style="width: 84rpx; text-align: left">
+      <text bindtap="changTextType" data-type="all" class="{{activeText === 'all' ? 'active' : ''}}">
+        全部
+      </text>
+    </view>
+    <view style="width: 84rpx; text-align: center">
+      <text bindtap="changTextType" data-type="inWater" class="{{activeText === 'inWater' ? 'active' : ''}}">
+        电线
+      </text>
+    </view>
+    <view style="width: 84rpx; text-align: center">
+      <text bindtap="changTextType" data-type="outWater" class="{{activeText === 'outWater' ? 'active' : ''}}">
+        线管
+      </text>
+    </view>
+    <view style="width: 160rpx; text-align: center">
+      <text bindtap="changTextType" data-type="other" class="{{activeText === 'other' ? 'active' : ''}}">
+        其他配件
+      </text>
+    </view>
+  </view>
+
+  <view class="goods-panel">
+    <goodItem wx:for="{{goodList}}" wx:key="{{item.id}}" goodItem="{{item}}"></goodItem>
+  </view>
+
+</view>
+
+<topPanel></topPanel>
+

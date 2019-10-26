@@ -1,0 +1,32 @@
+<!--pages/manageAddress/index.wxml-->
+<view>
+  <van-swipe-cell right-width="{{ 90 }}">
+    <van-cell-group>
+      <view class="item">
+        <view class="cont-wrap">
+          <view class="content">
+            <view><text class="grey-color">朱佳敏 12345678901</text></view>
+            <view><text class="address">杭州市在那边好结果很高做空工具和几个孩子就会跟着更好看</text></view>
+          </view>
+          <image class="edit-icon" src="/images/edit.png"></image>
+        </view>
+      </view>
+    </van-cell-group>
+    <view slot="right" bindtap="toDelete" class="van-swipe-cell__right">删除</view>
+  </van-swipe-cell>
+
+  <van-swipe-cell right-width="{{ 90 }}">
+    <van-cell-group>
+      <view class="item">
+        <view class="cont-wrap">
+          <view class="content">
+            <view><text class="grey-color">朱佳敏 12345678901</text></view>
+            <view><text class="address">杭州市在那边好结果很高做空工具和几个孩子就会跟着更好看</text></view>
+          </view>
+          <image class="edit-icon" src="/images/edit.png"></image>
+        </view>
+      </view>
+    </van-cell-group>
+    <view slot="right" bindtap="toDelete" class="van-swipe-cell__right">删除</view>
+  </van-swipe-cell>
+</view>

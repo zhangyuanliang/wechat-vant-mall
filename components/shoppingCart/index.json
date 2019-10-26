@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cartItem": "/components/cartItem/index",
+    "cartItemDisabled": "/components/cartItemDisabled/index"
+  }
+}

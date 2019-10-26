@@ -1,0 +1,9 @@
+
+.van-tabbar-item__icon {
+  margin-bottom: 4rpx!important;
+}
+
+.van-tabbar-item__icon image {
+  width: 48rpx!important;
+  height: 48rpx!important;
+}

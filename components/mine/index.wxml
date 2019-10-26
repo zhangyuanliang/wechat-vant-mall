@@ -1,0 +1,59 @@
+<!--components/mine/index.wxml-->
+<view>
+  <view class="top-panel">
+    <image class="panel-bg" src="/images/mine/card.png"></image>
+    <view bindtap="toUserInfo" class="panel-cont">
+      <view class="flex-v">
+        <image class="head" src="/images/mine/default-head.png"></image>
+        <view wx:if="{{login}}" class="btn"><text>请登录</text></view>
+        <view wx:else class="info">
+          <view><text>朱佳敏</text></view>
+          <view><text>12345678901</text></view>
+        </view>
+      </view>
+      <image class="setting" src="/images/mine/setting.png"></image>
+    </view>
+  </view>
+
+  <view class="wrap">
+    <view class="order-panel">
+      <view class="order-top">
+        <text style="font-size: 32rpx;">我的订单</text>
+        <view>
+          <text class="grey-color">全部订单</text>
+          <image class="expand" src="/images/mine/expand.png"></image>
+        </view>
+      </view>
+      <view class="imgs">
+        <view class="img-wrap">
+          <image class="order-img" src="/images/mine/dzf.png"></image>
+          <view><text style="font-size:24rpx;color:#727272">待支付</text></view>
+        </view>
+        <view class="img-wrap">
+          <image class="order-img" src="/images/mine/dfh.png"></image>
+          <view><text style="font-size:24rpx;color:#727272">待发货</text></view>
+        </view>
+        <view class="img-wrap">
+          <image class="order-img" src="/images/mine/yfh.png"></image>
+          <view><text style="font-size:24rpx;color:#727272">已发货</text></view>
+        </view>
+        <view class="img-wrap">
+          <image class="order-img" src="/images/mine/ywc.png"></image>
+          <view><text style="font-size:24rpx;color:#727272">已完成</text></view>
+        </view>
+        <view class="img-wrap">
+          <image class="order-img" src="/images/mine/yqx.png"></image>
+          <view><text style="font-size:24rpx;color:#727272">已取消</text></view>
+        </view>
+      </view>
+    </view>
+    <view class="address" bindtap="toAddress">
+      <view style="display: flex; align-items: center; height: 100%;">
+        <image class="address-img" src="/images/mine/address.png"></image>
+        <text>收货地址管理</text>
+      </view>
+      <image class="expand" src="/images/mine/expand.png"></image>
+    </view>
+
+  </view>
+</view>

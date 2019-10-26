@@ -1,0 +1,10 @@
+/* pages/userInfo/index.wxss */
+.item {
+  height: 112rpx;
+  padding: 0 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rpx;
+  background: #fff;
+}

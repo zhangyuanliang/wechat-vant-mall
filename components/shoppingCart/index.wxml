@@ -1,0 +1,45 @@
+<!--components/shoppingCart/index.wxml-->
+<view>
+  <view class="top-info">
+    <text class="grey-color">共 12 件宝贝</text>
+    <text>编辑</text>
+  </view>
+  <view class="flex-column">
+    <cartItem
+      wx:for="{{goodsList}}"
+      wx:key="{{index}}"
+      goodItem="{{item}}"
+      index="{{index}}"
+      bindselect="changeSelect"
+      bindchangeNum="changeNum"
+      bindtoDelete="toDelete"
+    ></cartItem>
+    <view class="disable-panel">
+      <view class="flex-between panel-top">
+        <text>失效宝贝 2 件</text>
+        <text style="color: #FF6E1F;">清空失效宝贝</text>
+      </view>
+      <view>
+        <cartItemDisabled 
+          wx:for="{{goodsList}}"
+          wx:key="{{index}}"
+          goodItem="{{item}}"
+        ></cartItemDisabled>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="bottom-panel">
+  <view class="select-wrap" bindtap="changeSelectAll">
+    <image wx:if="{{activeAll}}" src="/images/shopping/radio-active.png"></image>
+    <image wx:else src="/images/shopping/radio.png"></image>
+    <view>全选</view>
+  </view>
+  <view class="total-wrap">
+    <view class="grey-color">共计：</view>
+    <view class="total-price primary-color">
+      ¥<view class="price-num">{{totalPrice}}</view>
+    </view>
+  </view>
+  <view class="settlement-btn">结算（{{selectedNum}}）</view>
+</view>

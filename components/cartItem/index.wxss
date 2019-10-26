@@ -1,0 +1,76 @@
+/* components/cartItem/index.wxss */
+.item {
+  width: 702rpx;
+  height: 204rpx;
+  padding: 0 24rpx;
+  background: #fff;
+  box-shadow: 0px 0px 8rpx 0px #eee;
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.is-selected image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.goods-img {
+  width: 156rpx;
+  height: 156rpx;
+  margin: 0 24rpx;
+}
+
+.good-info {
+  height: 156rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.good-price {
+  margin: 0;
+}
+
+.info {
+  font-size: 24rpx;
+  font-weight: 400;
+  background: #f9f9f9;
+  color: #727272;
+  display: inline;
+}
+
+.expand {
+  width: 24rpx;
+  min-width: 24rpx;
+  height: 14rpx;
+  padding-right: 10rpx;
+}
+
+/* 步进器 */
+.stepper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.stepper image {
+  width: 36rpx;
+  height: 36rpx;
+  padding: 20rpx;
+}
+
+.van-swipe-cell__right {
+  display: inline-block;
+  justify-content: center;
+  height: 204rpx;
+  padding: 0 60rpx;
+  font-size: 32rpx;
+  line-height: 204rpx;
+  color: #fff;
+  background-color: #ff6e1f;
+}

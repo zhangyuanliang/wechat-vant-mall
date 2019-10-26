@@ -1,0 +1,12 @@
+<!--components/topPanel/index.wxml-->
+<view class="pannel-cls">
+  <view class="position">
+    <image src="/images/home/position.png" class="pos-icon"></image>
+    <text>杭州滨江通策广场…</text>
+    <image src="/images/home/expand.png" class="expand"></image>
+  </view>
+  <view class="input-cls">
+    <image src="/images/home/search.png"></image>
+    <input placeholder="搜索商品"></input>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<!--components/cartItemDisabled/index.wxml-->
+<view class="item">
+  <view class="disable-icon">
+    <text>失效</text>
+  </view>
+  <image class="goods-img" src="/images/banner@2x.png"></image>
+  <view class="good-info">
+    <view>
+      <view style="line-height: 46rpx; color: #727272"><text>{{goodItem.name}}</text></view>
+      <view class="info">
+        <text style="line-height: 40rpx; padding: 0 12rpx;">保温管；40mm</text>
+        <image src="/images/shopping/expand.png" class="expand"></image>
+      </view>
+    </view>
+    <view>
+      <text style="font-size: 20rpx; color: #727272">该宝贝已不能购买，请再看看其他的吧</text>
+    </view>
+  </view>
+</view>
+

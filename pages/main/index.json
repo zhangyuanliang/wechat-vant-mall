@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "home": "/components/home/index",
+    "cartItem": "/components/cartItem/index",
+    "cartItemDisabled": "/components/cartItemDisabled/index",
+    "mine": "/components/mine/index",
+    "confirm": "/components/confirm/index"
+  }
+}

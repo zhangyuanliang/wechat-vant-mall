@@ -1,0 +1,51 @@
+.primary-color {
+  color: #FF6E1F;
+}
+
+.grey-color {
+  color: #727272
+}
+
+.good-price {
+  margin: 12rpx 0 12rpx 0;
+  color: rgba(255,110,31,1);
+}
+
+.good-price text {
+  font-size: 36rpx;
+  font-family: DIN-Medium,DIN;
+  font-weight: 500;
+  color: rgba(255,110,31,1);
+  line-height: 44rpx;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-c {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-v {
+  display: flex;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head {
+  height: 100rpx;
+  width: 100rpx;
+}

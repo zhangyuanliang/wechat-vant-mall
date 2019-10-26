@@ -1,0 +1,68 @@
+/* components/confirm/index.wxss */
+/* 弹出层css start */
+.pop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pop .pop-cont {
+  width: 484rpx;
+  height: 254rpx;
+  border-radius: 16rpx;
+  position: absolute;
+  left: 143rpx;
+  top: 350rpx;
+  z-index: 2;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prompt {
+  height: 172rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+}
+
+.pop-cont .btn-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 92rpx;
+  border-top: 2rpx solid #eee;
+}
+
+.confirm-btn,
+.cancel-btn {
+  width: 50%;
+  height: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+
+.cancel-btn {
+  border-right: 2rpx solid #eee;
+}
+
+.btn-wrap .text,
+.btn-wrap .text {
+  transform: translate(10rpx, 0);
+}
+
+.btn-wrap .confirm-btn {
+  position: relative;
+  color: #fead19;
+}

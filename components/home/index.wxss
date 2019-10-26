@@ -1,0 +1,65 @@
+.container-wrap {
+  padding: 0 24rpx;
+}
+
+.banner-img {
+  width: 702rpx;
+  height: 240rpx;
+  border-radius: 8rpx;
+}
+
+swiper-item image {
+  margin-left: 24rpx;
+}
+
+.classification {
+  display: flex;
+  justify-content: center;
+}
+
+.classification>image {
+  width: 406rpx;
+  height: 90rpx;
+}
+
+.classification>.water {
+  margin-right: -40rpx;
+}
+
+.classification>.electric {
+  margin-left: -40rpx;
+}
+
+.text-cls {
+  color:#727272;
+  display: flex;
+  align-items: center;
+  height: 32rpx;
+  line-height: 32rpx;
+}
+
+.text-cls .active {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #16110a;
+  transition: font-size .1s;
+}
+
+.goods-panel {
+  display: flex;
+  margin-top: 30rpx;
+  flex-wrap: wrap;
+  padding-bottom: 120rpx;
+}
+
+.goods-panel goodItem:nth-child(2n+1) {
+  margin-right: 22rpx;
+}
+/* 
+.goods-panel goodItem:nth-child(2n+1) image {
+  height: 320rpx;
+}
+
+.goods-panel goodItem:nth-child(2n+3) {
+  margin-top: 36rpx;
+} */

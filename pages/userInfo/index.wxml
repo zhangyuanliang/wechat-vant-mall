@@ -1,0 +1,15 @@
+<!--pages/userInfo/index.wxml-->
+<view class="container">
+  <view class="item">
+    <text>头像</text>
+    <image class="head" src="/images/mine/default-head.png"></image>
+  </view>
+  <view class="item">
+    <text>昵称</text>
+    <text class="grey-color">昵称123456</text>
+  </view>
+  <view class="item">
+    <text>手机号</text>
+    <text class="grey-color">12345678901</text>
+  </view>
+</view>

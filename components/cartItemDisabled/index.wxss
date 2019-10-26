@@ -1,0 +1,53 @@
+/* components/cartItemDisabled/index.wxss */
+.item {
+  width: 702rpx;
+  height: 204rpx;
+  padding: 0 24rpx;
+  background: #fff;
+  box-shadow: 0px 0px 8rpx 0px #eee;
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.disable-icon {
+  width: 64rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 20rpx;
+  background: #9b9b9b;
+  color: #fff;
+  border-radius: 15rpx;
+}
+
+.goods-img {
+  width: 156rpx;
+  height: 156rpx;
+  margin: 0 24rpx;
+}
+
+.good-info {
+  height: 156rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.info {
+  font-size: 24rpx;
+  font-weight: 400;
+  background: #f9f9f9;
+  color: #727272;
+  display: inline;
+  border-radius: 4rpx;
+}
+
+.expand {
+  width: 24rpx;
+  min-width: 24rpx;
+  height: 14rpx;
+}
+

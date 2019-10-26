@@ -1,0 +1,112 @@
+/* components/mine/index.wxss */
+.top-panel {
+  position: relative;
+}
+
+.panel-bg {
+  width: 100%;
+  height: 248rpx;
+}
+
+.panel-cont {
+  position: absolute;
+  top: 50rpx;
+  left: 0;
+  width: 100%;
+  padding: 0 52rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  width: 144rpx;
+  height: 52rpx;
+  margin-left: 46rpx;
+  line-height: 52rpx;
+  background: #ffffff33;
+  border-radius: 8rpx;
+  border: 2rpx solid #fff;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+
+.setting {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-panel {
+  width: 702rpx;
+  height: 252rpx;
+  background: rgba(255,255,255,1);
+  box-shadow: 0px 0px 8rpx 0px rgba(238,238,238,1);
+  border-radius: 16rpx;
+  padding: 24rpx;
+}
+
+.order-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgs {
+  display: flex;
+  padding-top: 42rpx;
+}
+
+.img-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 72rpx;
+  margin-right: 72rpx;
+}
+
+.img-wrap:last-child {
+  margin-right: 0rpx;
+}
+
+.imgs image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.address {
+  width: 702rpx;
+  height: 88rpx;
+  margin-top: 60rpx;
+  border-radius: 8rpx;
+  border: 2rpx solid #eee;
+  padding: 0 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.address-img {
+  width: 26rpx;
+  height: 32rpx;
+  margin-right: 16rpx;
+}
+
+.expand {
+  width: 12rpx;
+  height: 24rpx; 
+  margin-left: 12rpx;
+}
+
+.info {
+  font-weight: 500;
+  color: #fff; 
+  margin-left: 30rpx;
+}

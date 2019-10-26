@@ -1,0 +1,31 @@
+<!--components/cartItem/index.wxml-->
+<wxs src="../../tools.wxs" module="tools" />
+<van-swipe-cell right-width="{{ 90 }}">
+  <van-cell-group>
+    <view class="item">
+      <view bindtap="changeRadio" data-index="{{index}}" class="is-selected">
+        <image wx:if="{{goodItem.active}}" src="/images/shopping/radio-active.png"></image>
+        <image wx:else src="/images/shopping/radio.png"></image>
+      </view>
+      <image class="goods-img" src="/images/banner@2x.png"></image>
+      <view class="good-info">
+        <view>
+          <view style="line-height: 46rpx;"><text>{{goodItem.name}}</text></view>
+          <view class="info">
+            <text style="line-height: 40rpx; padding: 0 12rpx;">保温管；40mm</text>
+            <image src="/images/shopping/expand.png" class="expand"></image>
+          </view>
+        </view>
+        <view class="good-price">
+          ¥ <text>{{tools.twoDecimal(goodItem.price)}}</text>
+        </view>
+      </view>
+      <view class="stepper">
+        <image bindtap="changeStepper" data-operation="down" src="/images/shopping/down.png"></image>
+        <view style="width: 28rpx; text-align: center;"><text>{{goodItem.num}}</text></view>
+        <image bindtap="changeStepper" data-operation="up" src="/images/shopping/up.png"></image>
+      </view>
+    </view>
+  </van-cell-group>
+  <view slot="right" bindtap="toDelete" class="van-swipe-cell__right">删除</view>
+</van-swipe-cell>

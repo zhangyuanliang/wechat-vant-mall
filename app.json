@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/main/index",
+    "pages/userInfo/index",
+    "pages/manageAddress/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-tabbar": "/miniprogram_npm/vant-weapp/tabbar/index",
+    "van-tabbar-item": "/miniprogram_npm/vant-weapp/tabbar-item/index",
+    "van-cell": "/miniprogram_npm/vant-weapp/cell/index",
+    "van-cell-group": "/miniprogram_npm/vant-weapp/cell-group/index",
+    "van-swipe-cell": "/miniprogram_npm/vant-weapp/swipe-cell/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}
