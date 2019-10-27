@@ -1,0 +1,98 @@
+<!--pages/goodDetail/index.wxml-->
+<wxs src="../../tools.wxs" module="tools" />
+<view class="container detail-wrap">
+  <swiper
+    indicator-dots="{{true}}"
+    autoplay="{{true}}"
+    interval="{{2000}}"
+    duration="{{500}}"
+    indicator-color="#D8D8D8"
+    indicator-active-color="#FEAD19"
+    style="height: 500rpx;"
+  >
+    <block wx:for="{{images}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="banner-img"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="good-info">
+    <view class="name"><text>商品名称商品名称商品水管户更好</text></view>
+    <view class="primary-color">¥<text>199.00</text></view>
+  </view>
+
+  <view bindtap="showPopup" class="specifications">
+    <text>请选择商品规格</text>
+    <image class="expand" src="/images/mine/expand.png"></image>
+  </view>
+
+  <view class="panel">
+    <view class="flex-cv panel-top">
+      <view class="border-l"></view>
+      <view>商品详情</view>
+      <view class="border-l"></view>
+    </view>
+    <view class="grey-color font-s-24">
+      <text>【商品介绍】</text>
+
+    </view>
+  </view>
+
+  <view class="btn-wrap">
+    <view bindtap="toShop" class="icon-wrap">
+      <image src="/images/shopping/shop.png" class="shop-icon"></image>
+      <text>购物车</text>
+      <text class="shop-num">{{num}}</text>
+    </view>
+    <view bindtap="addShop" class="btn">
+      确定
+    </view>
+  </view>
+</view>
+
+<!-- 底部弹出层 -->
+<van-popup
+  show="{{ isShowPopup }}"
+  bind:close="closePopup"
+  position="bottom"
+  custom-style="height:86%;padding-bottom:120rpx;"
+>
+  <view style="height: 100%;overflow-y: auto">
+    <view class="item">
+      <image class="goods-img" src="/images/banner@2x.png"></image>
+      <view class='pop-good-info'>
+        <view>
+          <view class="name"><text>{{goodItem.name}}</text></view>
+          <view class="info">
+            <text style="line-height: 40rpx; padding: 0 12rpx;">保温管；40mm</text>
+          </view>
+        </view>
+        <view class="pop-price primary-color">¥<text>199.00</text></view>
+      </view>
+    </view>
+    <block wx:for="{{[1,2]}}" wx:key="index">
+      <view class="title">
+        <text>规格</text>
+      </view>
+      <view class="btns">
+        <text 
+          wx:for="{{goodItem.styles}}"
+          wx:key="index"
+          bindtap="changStyle" 
+          data-index="{{index}}"
+          class="{{index === activeIndex? 'active': ''}}"
+        >{{item.name}}</text>
+      </view>
+    </block>
+    <view class="buy-num">
+      <text>购买数量</text>
+      <view class="stepper">
+        <image bindtap="changeStepper" data-operation="down" src="/images/shopping/down.png"></image>
+        <view style="width: 28rpx; text-align: center;"><text>{{num}}</text></view>
+        <image bindtap="changeStepper" data-operation="up" src="/images/shopping/up-2.png"></image>
+      </view>
+    </view>
+  </view>
+  <bottomBtn bindclick="addShop" disabled="{{true}}">加入购物车</bottomBtn>
+</van-popup>

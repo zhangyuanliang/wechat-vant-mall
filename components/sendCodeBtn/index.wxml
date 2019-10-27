@@ -1,0 +1,3 @@
+<view bindtap="sendMsg" class="send-code {{disabled? 'disabled':''}}">
+  <text>{{text}}</text>
+</view>

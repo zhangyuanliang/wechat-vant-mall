@@ -1,6 +1,6 @@
 <!--components/bottomBtn/index.wxml-->
-<view class='btn-wrap'>
-  <view class='btn'>
+<view class="btn-wrap">
+  <view bindtap="onClick" class="btn {{disabled ? 'grey': ''}}">
     <slot></slot>
   </view>
 </view>

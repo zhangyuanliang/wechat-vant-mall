@@ -47,6 +47,11 @@ Page({
     scrollTopArray: [], // 记录每个页面的滚动位置
   },
   onLoad: function (options) {
+    if (options.activeIndex) {
+      this.setData({
+        activeIndex: parseInt(options.activeIndex)
+      })
+    }
     this.data.tabbar.forEach((item, index, arr) => {
       this.data.scrollTopArray[index] = 0;
       // item.isFirstLoad = true
@@ -180,7 +185,7 @@ Page({
   toConfirmOrder: function() {
     const goodsList = this.filterSelected()
     wx.navigateTo({
-      url: '../confirmOrder/index?item=' + JSON.stringify({ goodsList }),
+      url: '../confirmOrder/index?first=true&&item=' + JSON.stringify({ goodsList }),
     })
   },
   /** 购物车 end */

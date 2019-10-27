@@ -2,16 +2,6 @@
   padding: 0 24rpx;
 }
 
-.banner-img {
-  width: 702rpx;
-  height: 240rpx;
-  border-radius: 8rpx;
-}
-
-swiper-item image {
-  margin-left: 24rpx;
-}
-
 .classification {
   display: flex;
   justify-content: center;

@@ -1,6 +1,8 @@
 {
   "usingComponents": {
     "address": "/components/address/index",
-    "orderItem": "/components/orderItem/index"
+    "orderItem": "/components/orderItem/index",
+    "orderStatus": "/components/orderStatus/index",
+    "bottomBtn": "/components/bottomBtn/index"
   }
 }

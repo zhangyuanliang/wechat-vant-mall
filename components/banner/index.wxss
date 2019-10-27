@@ -1,0 +1,10 @@
+/* components/banner/index.wxss */
+.banner-img {
+  width: 702rpx;
+  height: 240rpx;
+  border-radius: 8rpx;
+}
+
+swiper-item image {
+  margin-left: 24rpx;
+}

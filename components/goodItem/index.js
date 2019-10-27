@@ -12,8 +12,11 @@ Component({
 
   },
   methods: {
-    toDetails() {
-      this.triggerEvent('click')
+    toDetail() {
+      const str = JSON.stringify(this.data.goodItem)
+      wx.navigateTo({
+        url: '../../pages/goodDetail/index?item=' + str
+      })
     }
   }
 })

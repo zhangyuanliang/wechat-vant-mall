@@ -4,7 +4,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    disabled: {
+      type: Boolean,
+      value: false
+    }
   },
 
   /**
@@ -18,6 +21,8 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    onClick: function() {
+      this.triggerEvent('click', this.data.index)
+    }
   }
 })

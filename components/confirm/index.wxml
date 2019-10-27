@@ -1,5 +1,5 @@
 <!--components/confirm/index.wxml-->
-<view class="pop mil-pop" wx:if="{{isShow}}">
+<view class="pop" wx:if="{{isShow}}">
   <view class="pop-cont">
     <view class="flex prompt">
       <text>{{title}}</text>

@@ -78,12 +78,20 @@
   color: #727272;
 }
 
+.margin-t-12 {
+  margin-top: 12rpx;
+}
+
 .margin-t-24 {
   margin-top: 24rpx;
 }
 
 .font-s-24 {
   font-size: 24rpx;
+}
+
+.font-s-32 {
+  font-size: 32rpx;
 }
 
 .radio-icon {

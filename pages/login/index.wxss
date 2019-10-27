@@ -1,0 +1,118 @@
+/* pages/login/index.wxss */
+.login-wrap {
+  min-height: 100vh;
+  position: relative;
+}
+
+.login-bg {
+  position: absolute;
+  width: 750rpx;
+  height: 596rpx;
+}
+
+.login-title {
+  display: flex;
+  justify-content: center;
+  font-size: 36rpx;
+  font-weight: 500;
+  color: rgba(22,17,10,1);
+  line-height: 50rpx;
+  letter-spacing: 10rpx;
+}
+
+.login-cont {
+  position: absolute;
+  top: 332rpx;
+  left: 52rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 648rpx;
+  height: 470rpx;
+  padding-top: 48rpx;
+  background: rgba(255,255,255,1);
+  box-shadow: 0px 0px 12rpx 0px #cf984f87;
+  border-radius: 16rpx;
+}
+
+.iphone-wrap  {
+  width: 560rpx;
+  height: 80rpx;
+  border-radius: 8rpx;
+  margin-top: 40rpx;
+}
+
+.iphone-wrap image {
+  width: 36rpx;
+  height: 46rpx;
+}
+
+.login-cont input,
+.code-wrap input {
+  padding: 0 10rpx;
+}
+
+.code-wrap {
+  width: 560rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 40rpx;
+}
+
+.code-wrap image {
+  width: 36rpx;
+  height: 46rpx;
+}
+
+.code-input {
+  display: flex;
+  align-items: center;
+}
+
+.iphone-input,
+.code-input {
+  width: 100%;
+  margin-left: 26rpx;
+  padding: 24rpx 0;
+  border-bottom: 1px solid #eee;
+}
+
+.login-btn-wrap {
+  width: 100%;
+  position: relative;
+  top: 69rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cf-style {
+  position: absolute;
+  width: 464rpx;
+  height: 90rpx;
+  margin: 40rpx 10rpx 36rpx 0;
+}
+
+.login-btn {
+  margin: 36rpx 18rpx 36rpx 0;
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  padding-top: 6rpx;
+
+  width: 368rpx;
+  height: 72rpx;
+  background: linear-gradient(144deg,#ffd251 0%,#fea20b 100%);
+  border-radius: 36rpx;
+}
+
+.input::placeholder {
+  font-size: 28px;
+  font-weight: 500;
+  color:#727272;
+}

@@ -5,7 +5,10 @@
     "pages/manageAddress/index",
     "pages/addAddress/index",
     "pages/orderList/index",
-    "pages/confirmOrder/index"
+    "pages/confirmOrder/index",
+    "pages/goodDetail/index",
+    "pages/selectAddress/index",
+    "pages/login/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -20,6 +23,7 @@
     "van-cell-group": "/miniprogram_npm/vant-weapp/cell-group/index",
     "van-swipe-cell": "/miniprogram_npm/vant-weapp/swipe-cell/index",
     "van-tab": "/miniprogram_npm/vant-weapp/tab/index",
-    "van-tabs": "/miniprogram_npm/vant-weapp/tabs/index"
+    "van-tabs": "/miniprogram_npm/vant-weapp/tabs/index",
+    "van-popup": "/miniprogram_npm/vant-weapp/popup/index"
   }
 }

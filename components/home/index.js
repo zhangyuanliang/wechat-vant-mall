@@ -1,7 +1,7 @@
 // components/home/index.js
 Page({
   data: {
-    banners: [
+    images: [
       '/images/banner@2x.png',
       '/images/banner@2x.png'
     ],

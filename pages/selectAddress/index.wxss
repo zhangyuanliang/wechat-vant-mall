@@ -1,0 +1,27 @@
+/* pages/selectAddress/index.wxss */
+.select-wrap {
+  padding: 24rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-wrap .add-icon {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 8rpx;
+}
+
+.address-list {
+  background: #fff;
+  padding: 0rpx 24rpx;
+}
+
+.item {
+  padding-top: 24rpx;
+}
+
+.name-info {
+  color: #727272;
+  margin: 8rpx 0 24rpx 0;
+}

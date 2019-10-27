@@ -1,0 +1,18 @@
+.send-code {
+  background: #fff;
+  color: #FEAD19;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 192rpx;
+  height: 48rpx;
+  border-radius: 25rpx;
+  border: 2rpx solid rgba(254,173,25,1);
+}
+
+.disabled {
+  border: 1px solid #8c8c8d;
+  color: #fff;
+  background: #8c8c8d;
+}

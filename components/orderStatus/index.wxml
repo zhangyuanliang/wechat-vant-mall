@@ -1,0 +1,24 @@
+<!--components/orderStatus/index.wxml-->
+<view class="status-panel flex-between">
+  <view class="content">
+    <view style="margin-bottom: 12rpx;">
+      <text wx:if="{{status === 0}}" class="status dzf">待支付</text>
+      <text wx:if="{{status === 1}}" class="status yqx">已取消</text>
+      <text wx:if="{{status === 2}}" class="status">待发货</text>
+      <text wx:if="{{status === 3}}" class="status">已发货</text>
+      <text wx:if="{{status === 4}}" class="status">已完成</text>
+    </view>
+    <view>
+      <text wx:if="{{status === 0}}">还剩12小时12分交易关闭</text>
+      <text wx:if="{{status === 1}}">商品已取消，可重新下单</text>
+      <text wx:if="{{status === 2}}">宝贝还在准备中，不要着急哦~</text>
+      <text wx:if="{{status === 3}}">商品已在路上，系统将7天完成收货</text>
+      <text wx:if="{{status === 4}}">感谢您对我们的信任，期待再次光临！</text>
+    </view>
+  </view>
+  <image text wx:if="{{status === 0}}" src="/images/order/dzf.png"></image>
+  <image text wx:if="{{status === 1}}" src="/images/order/yqx.png"></image>
+  <image text wx:if="{{status === 2}}" src="/images/order/dfh.png"></image>
+  <image text wx:if="{{status === 3}}" src="/images/order/yfh.png"></image>
+  <image text wx:if="{{status === 4}}" src="/images/order/ywc.png"></image>
+</view>

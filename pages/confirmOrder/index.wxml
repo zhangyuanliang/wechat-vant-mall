@@ -1,7 +1,8 @@
 <!--pages/confirmOrder/index.wxml-->
 <wxs src="../../tools.wxs" module="tools" />
-<view class="container confirm-wrap">
-  <address></address>
+<view class="confirm-wrap">
+  <orderStatus status="{{status}}"></orderStatus>
+  <address item="{{address}}"></address>
   <view class="goods-panel">
     <orderItem 
       wx:for="{{goodsList}}" 
@@ -17,9 +18,16 @@
     <view class="flex-between margin-t-24 font-s-24">
       <text>商品数量：</text><text>×12</text>
     </view>
+    <view class="flex-between margin-t-24 font-s-24">
+      <text>商品总价：</text>
+      <view class="font-s-24">
+        ¥<text class="font-s-32">99.00</text>
+      </view>
+    </view>
     <view style="margin-top: 42rpx">
       <text>支付方式：</text>
     </view>
+    <!-- 微信支付 -->
     <view bindtap="changeRadio" class="flex-between margin-t-24">
       <view class="flex-v">
         <image src="/images/order/wx.png" class="wx-icon"></image>
@@ -28,17 +36,41 @@
       <image wx:if="{{active}}" src="/images/shopping/radio-active.png" class="radio-icon"></image>
       <image wx:else src="/images/shopping/radio.png" class="radio-icon"></image>
     </view>
+    <!-- 取消订单 -->
+    <view class='cancel-wrap margin-t-24'>
+      <view class='cancel-btn'>
+        取消订单
+      </view>
+    </view>
+  </view>
+  <view class="grey-color order-num">
+    <text>订单编号：23820302</text>
+    <text class="margin-t-12">创建时间：2019-10-23 15:23:00</text>
   </view>
 </view>
 
-<view class="bottom-panel">
+<bottomBtn wx:if="{{status===0}}">立即支付</bottomBtn>
+<bottomBtn wx:if="{{status===1}}">再次下单</bottomBtn>
+
+<view wx:if="{{first}}" class="bottom-panel">
   <view style="flex-grow: 1">
     <view wx:if="{{!isEditing}}" class="total-wrap">
-      <view class="grey-color">共计：</view>
+      <view class="grey-color">实付：</view>
       <view class="total-price primary-color">
         ¥<view class="price-num">{{tools.twoDecimal(totalPrice)}}</view>
       </view>
     </view>
   </view>
   <view bindtap="toPay" class="settlement-btn">立即支付</view>
+</view>
+
+<view class="pop" wx:if="{{isShowDialog}}">
+  <view class="pop-cont">
+    <view class="cont">
+      <text>您还没有设置收货地址请前往添加</text>
+    </view>
+    <view bindtap="hideDialog" class="btn-wrap">
+      确定
+    </view>
+  </view>
 </view>

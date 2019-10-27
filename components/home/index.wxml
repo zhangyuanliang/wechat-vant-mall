@@ -1,20 +1,7 @@
 <!--components/home/index.wxml-->
-
-<swiper
-  indicator-dots="{{true}}"
-  autoplay="{{true}}"
-  interval="{{2000}}"
-  duration="{{500}}"
-  indicator-color="#D8D8D8"
-  indicator-active-color="#FEAD19"
-  style="height: 310rpx; padding-top: 104rpx"
->
-  <block wx:for="{{banners}}" wx:key="*this">
-    <swiper-item>
-      <image src="{{item}}" class="banner-img"></image>
-    </swiper-item>
-  </block>
-</swiper>
+<view style='padding-top: 104rpx'>
+  <banner images="{{images}}"></banner>
+</view>
 <view class="classification">
   <image wx:if="{{aciveType === 'water'}}" class="water" src="/images/home/water-active.png"></image>
   <image wx:else bindtap="changeType" data-type="water" class="water" src="/images/home/water.png"></image>

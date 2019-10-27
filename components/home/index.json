@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "topPanel": "/components/topPanel/index",
+    "banner": "/components/banner/index",
     "goodItem": "/components/goodItem/index"
   }
 }

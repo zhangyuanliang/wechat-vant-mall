@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "bottomBtn": "/components/bottomBtn/index"
+  }
+}
