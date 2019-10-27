@@ -1,0 +1,27 @@
+<!--components/orderPanel/index.wxml-->
+<view class="panel-wrap">
+  <view class="flex-between border-b panel-top">
+    <text>2019-10-24 22:44:13</text>
+    <text class="primary-color">待支付</text>
+  </view>
+  <orderItem 
+    wx:for="{{goodsList}}" 
+    wx:key="{{index}}"
+    goodItem="{{item}}"
+  ></orderItem>
+  <view class="flex-c">
+    <view class="more">展开更多</view>
+  </view>
+  <view class="flex-end">
+    <view class="order-price">
+      共 3 件，合计：
+      <view class="primary-color">¥<text>99.0</text></view>
+    </view>
+  </view>
+  <view class="flex-between">
+    <view class="time">剩<text class="primary-color">12</text>小时<text class="primary-color">12</text>分自动关闭</view>
+    <view wx:if="{{1 == 1}}" class="pay-btn">立即支付</view>
+    <view wx:if="{{status == 1}}" class="pay-btn confirm">确认支付</view>
+    <view wx:if="{{status == 1}}" class="pay-btn next">再次下单</view>
+  </view>
+</view>

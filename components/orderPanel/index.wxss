@@ -1,0 +1,57 @@
+/* components/orderPanel/index.wxss */
+.panel-wrap {
+  padding: 0 24rpx 42rpx 24rpx;
+  width: 702rpx;
+  background: rgba(255,255,255,1);
+  box-shadow:0px 0px 8rpx 0px #eee;
+  border-radius: 16rpx;
+}
+
+.panel-top {
+  height: 88rpx;
+}
+
+.order-price {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0;
+}
+
+.order-price view {
+  font-size: 22rpx;
+}
+
+.order-price view text {
+  font-size: 32rpx;
+}
+
+.time {
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 24rpx;
+}
+
+.pay-btn {
+  width: 156rpx;
+  height: 56rpx;
+  background: linear-gradient(135deg,#ffd251 0%,#fead19 100%);
+  border-radius: 40rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pay-btn.confirm {
+  background: #fff;
+  border: 2rpx solid #fead19;
+  color: #FEAD19;
+}
+
+.pay-btn.next {
+  background: #fff;
+  border: 2rpx solid #d8d8d8;
+  color: #727272;
+}

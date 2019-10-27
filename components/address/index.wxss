@@ -1,0 +1,45 @@
+/* components/address/index.wxss */
+
+.address-wrap {
+  position: relative;
+  height: 216rpx;
+}
+
+.address-bg {
+  width: 726rpx;
+  height: 216rpx;
+}
+
+.address-cont {
+  position: absolute;
+  width: 100%;
+  height: 216rpx;
+  padding: 0rpx 24rpx;
+  top: 0rpx;
+  left: 0rpx;
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #16110a;
+}
+
+.user-info {
+  width: 100%;
+  padding: 0 24rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 28rpx;
+  color: #727272;
+  margin-top: 12rpx;
+}
+
+.expand {
+  width: 12rpx;
+  height: 24rpx;
+  margin-right: 24rpx;
+}

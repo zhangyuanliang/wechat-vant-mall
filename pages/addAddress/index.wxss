@@ -1,0 +1,28 @@
+/* pages/addAddress/index.wxss */
+.add-wrap {
+  padding: 0 24rpx;
+  font-size: 32rpx;
+}
+
+.item {
+  height: 112rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.item .title {
+  /* display: inline-block; */
+  width: 176rpx;
+}
+
+.item input,
+.item picker {
+  flex-grow: 1;
+}
+
+.expand {
+  width: 12rpx;
+  height: 24rpx;
+  margin-right: 10rpx;
+}

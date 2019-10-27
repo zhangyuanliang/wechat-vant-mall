@@ -2,7 +2,10 @@
   "pages": [
     "pages/main/index",
     "pages/userInfo/index",
-    "pages/manageAddress/index"
+    "pages/manageAddress/index",
+    "pages/addAddress/index",
+    "pages/orderList/index",
+    "pages/confirmOrder/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -15,7 +18,8 @@
     "van-tabbar-item": "/miniprogram_npm/vant-weapp/tabbar-item/index",
     "van-cell": "/miniprogram_npm/vant-weapp/cell/index",
     "van-cell-group": "/miniprogram_npm/vant-weapp/cell-group/index",
-    "van-swipe-cell": "/miniprogram_npm/vant-weapp/swipe-cell/index"
-  },
-  "sitemapLocation": "sitemap.json"
+    "van-swipe-cell": "/miniprogram_npm/vant-weapp/swipe-cell/index",
+    "van-tab": "/miniprogram_npm/vant-weapp/tab/index",
+    "van-tabs": "/miniprogram_npm/vant-weapp/tabs/index"
+  }
 }

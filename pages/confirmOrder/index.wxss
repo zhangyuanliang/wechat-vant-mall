@@ -1,0 +1,74 @@
+/* pages/confirmOrder/index.wxss */
+
+.confirm-wrap {
+  padding: 20rpx 24rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.goods-panel {
+  width: 702rpx;
+  background: #fff;
+  padding: 40rpx 24rpx;
+  border-radius: 16rpx;
+  margin-bottom: 140rpx;
+}
+
+.wx-icon {
+  width: 40rpx;
+  height: 36rpx;
+  margin-right: 16rpx;
+}
+
+/* 底部panel */
+.bottom-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 750rpx;
+  height: 96rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 24rpx;
+  box-shadow: 0px -4px 12px 0px rgba(238,238,238,1);
+}
+
+.select-wrap {
+  width: 120rpx;
+  display: flex;
+  align-items: center;
+}
+
+.total-wrap {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  padding-left: 48rpx;
+}
+
+.total-price {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10rpx;
+}
+
+.price-num {
+  font-size: 44rpx;
+  line-height: 51rpx;
+  margin-left: 8rpx;
+}
+
+.settlement-btn {
+  width: 262rpx;
+  height: 72rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg,rgba(255,210,81,1) 0%,rgba(254,173,25,1) 100%);
+  border-radius: 40rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #fff;
+}

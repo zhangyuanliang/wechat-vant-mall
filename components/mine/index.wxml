@@ -17,7 +17,7 @@
 
   <view class="wrap">
     <view class="order-panel">
-      <view class="order-top">
+      <view bindtap="toOrderList" class="order-top">
         <text style="font-size: 32rpx;">我的订单</text>
         <view>
           <text class="grey-color">全部订单</text>

@@ -1,0 +1,44 @@
+<!--pages/confirmOrder/index.wxml-->
+<wxs src="../../tools.wxs" module="tools" />
+<view class="container confirm-wrap">
+  <address></address>
+  <view class="goods-panel">
+    <orderItem 
+      wx:for="{{goodsList}}" 
+      wx:key="{{index}}"
+      goodItem="{{item}}"
+    ></orderItem>
+    <view class="flex-c border-b">
+      <view class="more">展开更多</view>
+    </view>
+    <view class="flex-between margin-t-24 font-s-24">
+      <text>配送方式：</text><text>平台配送</text>
+    </view>
+    <view class="flex-between margin-t-24 font-s-24">
+      <text>商品数量：</text><text>×12</text>
+    </view>
+    <view style="margin-top: 42rpx">
+      <text>支付方式：</text>
+    </view>
+    <view bindtap="changeRadio" class="flex-between margin-t-24">
+      <view class="flex-v">
+        <image src="/images/order/wx.png" class="wx-icon"></image>
+        <text>微信支付</text>
+      </view>
+      <image wx:if="{{active}}" src="/images/shopping/radio-active.png" class="radio-icon"></image>
+      <image wx:else src="/images/shopping/radio.png" class="radio-icon"></image>
+    </view>
+  </view>
+</view>
+
+<view class="bottom-panel">
+  <view style="flex-grow: 1">
+    <view wx:if="{{!isEditing}}" class="total-wrap">
+      <view class="grey-color">共计：</view>
+      <view class="total-price primary-color">
+        ¥<view class="price-num">{{tools.twoDecimal(totalPrice)}}</view>
+      </view>
+    </view>
+  </view>
+  <view bindtap="toPay" class="settlement-btn">立即支付</view>
+</view>

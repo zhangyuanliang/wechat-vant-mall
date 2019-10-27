@@ -1,0 +1,20 @@
+<!--pages/orderList/index.wxml-->
+<view class="container">
+  <van-tabs animated sticky swipe-threshold="6" line-width="44">
+    <van-tab title="全部">
+      <view class="panel-cls">
+        <orderPanel goodsList="{{goodsList}}"></orderPanel>
+      </view>
+    </van-tab>
+    <van-tab title="待支付">
+      <view class="panel-cls">
+        <orderPanel goodsList="{{goodsList}}"></orderPanel>
+      </view>
+    </van-tab>
+    <van-tab title="待发货">内容 3</van-tab>
+    <van-tab title="已发货">内容 4</van-tab>
+    <van-tab title="已完成">内容 4</van-tab>
+    <van-tab title="已取消">内容 4</van-tab>
+  </van-tabs>
+
+</view>

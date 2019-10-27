@@ -1,0 +1,15 @@
+<!--components/orderItem/index.wxml-->
+<wxs src="../../tools.wxs" module="tools" />
+<view class="item">
+  <image class="goods-img" src="/images/banner@2x.png"></image>
+  <view class="good-info">
+    <view>
+      <view class="name"><text>{{goodItem.name}}</text></view>
+      <view class="info">
+        <text style="line-height: 40rpx; padding: 0 12rpx;">保温管；40mm</text>
+      </view>
+    </view>
+  </view>
+  <view class="price">¥<text>{{tools.twoDecimal(goodItem.price)}}</text></view>
+  <view class="grey-color num">x<text>{{goodItem.num}}</text></view>
+</view>

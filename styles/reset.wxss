@@ -7,3 +7,12 @@
   width: 48rpx!important;
   height: 48rpx!important;
 }
+
+/* van-tab css */
+.van-hairline--top-bottom:after {
+  border-width: 0!important;
+}
+
+.van-tabs__line {
+  background-color: var(--red,#FEAD19)!important;
+}

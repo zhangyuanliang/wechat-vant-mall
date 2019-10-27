@@ -33,6 +33,12 @@
   align-items: center;
 }
 
+.flex-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -45,7 +51,42 @@
   justify-content: space-between;
 }
 
+.flex-end {
+  display: flex; 
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .head {
   height: 100rpx;
   width: 100rpx;
+}
+
+.border-b {
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.more {
+  width: 156rpx;
+  height: 56rpx;
+  margin: 12rpx 0;
+  border-radius: 28rpx;
+  border: 2rpx solid #d8d8d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #727272;
+}
+
+.margin-t-24 {
+  margin-top: 24rpx;
+}
+
+.font-s-24 {
+  font-size: 24rpx;
+}
+
+.radio-icon {
+  width: 40rpx;
+  height: 40rpx;
 }

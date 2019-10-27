@@ -1,0 +1,6 @@
+/* pages/orderList/index.wxss */
+.panel-cls {
+  display: flex;
+  justify-content: center;
+  margin-top: 24rpx;
+}

@@ -28,6 +28,11 @@ Component({
       wx.navigateTo({
         url: '../../pages/manageAddress/index'
       })
+    },
+    toOrderList() {
+      wx.navigateTo({
+        url: '../../pages/orderList/index'
+      })
     }
   }
 })

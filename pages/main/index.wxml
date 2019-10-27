@@ -54,7 +54,7 @@
           </view>
         </view>
       </view>
-      <view wx:if="{{!isEditing}}" class="settlement-btn">结算（{{selectedNum}}）</view>
+      <view wx:if="{{!isEditing}}" bindtap="toConfirmOrder" class="settlement-btn">结算 ({{selectedNum}})</view>
       <view wx:else class="settlement-btn remove">删除</view>
     </view>
   </view>

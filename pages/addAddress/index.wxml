@@ -1,0 +1,30 @@
+<!--pages/addAddress/index.wxml-->
+<view class='add-wrap'>
+  <view class='item'>
+    <text class='title'>收件人</text>
+    <input placeholder='请填写收件人姓名'></input>
+  </view>
+  <view class='item'>
+    <text class='title'>手机号</text>
+    <input placeholder='请填写收件人手机号'></input>
+  </view>
+  <view class='item'>
+    <text class='title'>所在地区</text>
+    <!-- <input placeholder='点击选择所在地区'></input> -->
+    <!-- <picker bindchange="changePicker" mode="region">
+      <text class='grey-color'>点击选择所在地区</text>
+    </picker> -->
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" value="{{multiIndex}}" range="{{multiArray}}">
+      <view wx:if="{{item.address}}" class="picker">
+        {{item.address}}
+      </view>
+      <text wx:else class='grey-color'>点击选择所在地区</text>
+    </picker>
+    <image class='expand' src='/images/mine/expand.png'></image>
+  </view>
+  <view class='item'>
+    <text class='title'>详细地址</text>
+    <input placeholder='请输入详细地址'></input>
+  </view>
+  <bottomBtn>保存</bottomBtn>
+</view>

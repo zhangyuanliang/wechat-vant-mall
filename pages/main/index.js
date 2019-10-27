@@ -109,6 +109,7 @@ Page({
     this.calculateSelectedGoods()
     this.calculatePrice()
   },
+
   confirmDelete: function() {
     const goodsList = this.data.goodsList
     goodsList.splice(this.delIndex, 1)
@@ -119,17 +120,20 @@ Page({
     this.calculateSelectedGoods()
     this.calculatePrice()
   },
+
   toDelete: function (e) {
     this.delIndex = e.detail
     this.setData({
       showConfirm: true
     })
   },
+
   cancel: function() {
     this.setData({
       showConfirm: false
     })
   },
+
   changeNum: function (e) {
     const index = e.detail.index
     const operation = e.detail.operation
@@ -145,6 +149,7 @@ Page({
     this.calculateSelectedGoods()
     this.calculatePrice()
   },
+
   changeSelectAll() {
     const activeAll = this.data.activeAll
     const goodsList = this.data.goodsList.map(item => {
@@ -158,10 +163,24 @@ Page({
     this.calculateSelectedGoods()
     this.calculatePrice()
   },
+
   changeIsEditing: function(e) {
     const operation = e.currentTarget.dataset.operation
     this.setData({
       isEditing: operation === 'complete' ? false : true
+    })
+  },
+
+  filterSelected: function() {
+    return this.data.goodsList.filter(it => {
+      return it.active
+    })
+  },
+  
+  toConfirmOrder: function() {
+    const goodsList = this.filterSelected()
+    wx.navigateTo({
+      url: '../confirmOrder/index?item=' + JSON.stringify({ goodsList }),
     })
   },
   /** 购物车 end */

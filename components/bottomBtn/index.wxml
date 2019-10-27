@@ -1,0 +1,6 @@
+<!--components/bottomBtn/index.wxml-->
+<view class='btn-wrap'>
+  <view class='btn'>
+    <slot></slot>
+  </view>
+</view>

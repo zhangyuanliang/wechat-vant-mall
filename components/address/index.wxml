@@ -1,0 +1,11 @@
+<!--components/address/index.wxml-->
+<view class="address-wrap">
+  <image class="address-bg" src="/images/order/address-bg.png"></image>
+  <view class="address-cont">
+    <view class='user-info'>
+      <text>滨江通策广场三维大厦C座501</text>
+      <view class="name"><text>朱佳敏</text><text> 12345678901</text></view>
+    </view>
+    <image class="expand" src="/images/mine/expand.png"></image>
+  </view>
+</view>
