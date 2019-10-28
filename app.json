@@ -8,12 +8,13 @@
     "pages/confirmOrder/index",
     "pages/goodDetail/index",
     "pages/selectAddress/index",
-    "pages/login/index"
+    "pages/login/index",
+    "pages/orderDetail/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "辅料通",
     "navigationBarTextStyle": "black"
   },
   "usingComponents": {
@@ -26,5 +27,5 @@
     "van-tabs": "/miniprogram_npm/vant-weapp/tabs/index",
     "van-popup": "/miniprogram_npm/vant-weapp/popup/index"
   },
-  "sitemapLocation": "sitemap73.json"
+  "sitemapLocation": "sitemap.json"
 }

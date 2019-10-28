@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "商品详情",
   "usingComponents": {
     "bottomBtn": "/components/bottomBtn/index"
   }

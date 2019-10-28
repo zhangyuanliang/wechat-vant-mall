@@ -28,6 +28,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    oppenId: ''
+    oppenId: '',
+    orderAddress: {}
   }
 })

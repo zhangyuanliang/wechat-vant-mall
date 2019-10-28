@@ -6,7 +6,7 @@ Page({
       '/images/home/good-2.png'
     ],
     num: 8,
-    isShowPopup: true,
+    isShowPopup: false,
     activeIndex: 1,
     goodItem: {
       id: 1,

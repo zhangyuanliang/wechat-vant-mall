@@ -1,4 +1,4 @@
-<!--pages/confirmOrder/index.wxml-->
+<!--pages/orderDetail/index.wxml-->
 <wxs src="../../tools.wxs" module="tools" />
 <view class="confirm-wrap">
   <orderStatus status="{{status}}"></orderStatus>
@@ -24,11 +24,11 @@
         ¥<text class="font-s-32">99.00</text>
       </view>
     </view>
-    <view style="margin-top: 42rpx">
+    <view style="margin-top: 42rpx; display: none">
       <text>支付方式：</text>
     </view>
     <!-- 微信支付 -->
-    <view bindtap="changeRadio" class="flex-between margin-t-24">
+    <view bindtap="changeRadio" class="flex-between margin-t-24" style="display:none">
       <view class="flex-v">
         <image src="/images/order/wx.png" class="wx-icon"></image>
         <text>微信支付</text>
@@ -51,18 +51,6 @@
 
 <bottomBtn wx:if="{{status===0}}">立即支付</bottomBtn>
 <bottomBtn wx:if="{{status===1}}">再次下单</bottomBtn>
-
-<view wx:if="{{first}}" class="bottom-panel">
-  <view style="flex-grow: 1">
-    <view wx:if="{{!isEditing}}" class="total-wrap">
-      <view class="grey-color">实付：</view>
-      <view class="total-price primary-color">
-        ¥<view class="price-num">{{tools.twoDecimal(totalPrice)}}</view>
-      </view>
-    </view>
-  </view>
-  <view bindtap="toPay" class="settlement-btn">立即支付</view>
-</view>
 
 <view class="pop" wx:if="{{isShowDialog}}">
   <view class="pop-cont">

@@ -29,7 +29,8 @@ Component({
         url: '../../pages/manageAddress/index'
       })
     },
-    toOrderList() {
+    toOrderList(e) {
+      const orderStatus = e.currentTarget.dataset.status
       wx.navigateTo({
         url: '../../pages/orderList/index'
       })

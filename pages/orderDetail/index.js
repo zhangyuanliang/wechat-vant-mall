@@ -1,11 +1,10 @@
-// pages/confirmOrder/index.js
+// pages/orderDetail/index.js
 var app = getApp()
 
 Page({
   data: {
-    first: true,
-    status: null, // 0: 待支付 1: 已取消
-    active: true,
+    status: 0, // 0: 待支付 1: 已取消
+    // active: true, // 选择微信支付
     totalPrice: 199,
     goodsList: [
       { id: 1, name: '商品名称1', num: 1, price: 199.00, active: true, src: '/images/home/good-1.png' },
@@ -16,8 +15,7 @@ Page({
     address: {}
   },
   onLoad: function (options) {
-    const first = options.first
-    if (first) this.setData({ first })
+    
   },
   onReady: function () {
 
@@ -33,12 +31,12 @@ Page({
   onUnload: function () {
 
   },
-  changeRadio: function() {
+  changeRadio: function () {
     this.setData({
       active: !this.data.active
     })
   },
-  wxPay: function() {
+  wxPay: function () {
     // wx.requestPayment({
     //   timeStamp: '',
     //   nonceStr: '',
@@ -48,11 +46,8 @@ Page({
     //   success(res) { },
     //   fail(res) { }
     // })
-    wx.navigateTo({
-      url: '../orderDetail/index',
-    })
   },
-  toPay: function() {
+  toPay: function () {
     const adress = this.data.address
     if (JSON.stringify(adress) == "{}") {
       this.setData({
@@ -62,12 +57,12 @@ Page({
       this.wxPay()
     }
   },
-  hideDialog: function() {
+  hideDialog: function () {
     this.setData({
       isShowDialog: false
     })
   },
-  toSelectAddress: function() {
+  toSelectAddress: function () {
     wx.navigateTo({
       url: '../selectAddress/index',
     })

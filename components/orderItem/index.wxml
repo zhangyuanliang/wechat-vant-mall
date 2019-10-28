@@ -1,7 +1,7 @@
 <!--components/orderItem/index.wxml-->
 <wxs src="../../tools.wxs" module="tools" />
 <view class="item">
-  <image class="goods-img" src="/images/banner@2x.png"></image>
+  <image class="goods-img" src="{{goodItem.src}}"></image>
   <view class="good-info">
     <view>
       <view class="name"><text>{{goodItem.name}}</text></view>

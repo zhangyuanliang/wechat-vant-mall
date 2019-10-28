@@ -21,13 +21,13 @@ export const statusCodeMap = {
 export const OPPEN_ID = 'OPPEN_ID'
 export const USER_INFO = 'USER_INFO'
 
-// 订单流转状态
+// 订单状态
 export const ORDER_STATUS = {
-  0: '待支付',
-  1: '已取消',
+  1: '待支付',
   2: '待发货',
   3: '已发货',
-  4: '已完成'
+  4: '已完成',
+  5: '已取消'
 }
 
 export const tabbarList = [

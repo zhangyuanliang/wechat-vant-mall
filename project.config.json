@@ -129,6 +129,20 @@
 					"id": -1,
 					"name": "login",
 					"pathName": "pages/login/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/confirmOrder/index",
+					"pathName": "pages/confirmOrder/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/orderDetail/index",
+					"pathName": "pages/orderDetail/index",
 					"scene": null
 				}
 			]

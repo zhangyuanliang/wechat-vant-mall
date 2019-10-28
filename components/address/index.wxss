@@ -43,3 +43,9 @@
   height: 24rpx;
   margin-right: 24rpx;
 }
+
+.placeholder {
+  font-size: 30rpx;
+  font-weight: 400;
+  color: #727272;
+}

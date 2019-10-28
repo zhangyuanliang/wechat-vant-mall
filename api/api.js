@@ -12,7 +12,7 @@ export default {
   },
   // 获取验证码
   sendCode(data) {
-    return request.post('/api/user/uc/userInfo/api/verificationCode', qs.stringify(data))
+    return request.post('/api/user/uc/userInfo/api/sendVerificationCode', qs.stringify(data))
   },
   // 获取订单数量
   orderCount(data) {

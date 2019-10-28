@@ -25,23 +25,23 @@
         </view>
       </view>
       <view class="imgs">
-        <view class="img-wrap">
+        <view bindtap="toOrderList" data-status="1" class="img-wrap">
           <image class="order-img" src="/images/mine/dzf.png"></image>
           <view><text style="font-size:24rpx;color:#727272">待支付</text></view>
         </view>
-        <view class="img-wrap">
+        <view bindtap="toOrderList" data-status="2" class="img-wrap">
           <image class="order-img" src="/images/mine/dfh.png"></image>
           <view><text style="font-size:24rpx;color:#727272">待发货</text></view>
         </view>
-        <view class="img-wrap">
+        <view bindtap="toOrderList" data-status="3" class="img-wrap">
           <image class="order-img" src="/images/mine/yfh.png"></image>
           <view><text style="font-size:24rpx;color:#727272">已发货</text></view>
         </view>
-        <view class="img-wrap">
+        <view bindtap="toOrderList" data-status="4" class="img-wrap">
           <image class="order-img" src="/images/mine/ywc.png"></image>
           <view><text style="font-size:24rpx;color:#727272">已完成</text></view>
         </view>
-        <view class="img-wrap">
+        <view bindtap="toOrderList" data-status="5" class="img-wrap">
           <image class="order-img" src="/images/mine/yqx.png"></image>
           <view><text style="font-size:24rpx;color:#727272">已取消</text></view>
         </view>

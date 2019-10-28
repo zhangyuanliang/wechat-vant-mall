@@ -8,13 +8,9 @@
     </view>
   </view>
   <view class='address-list'>
-    <view class='item border-b'>
-      <view>杭州市在那边好结果很高做空工具和几个孩子就会跟着更好看</view>
-      <view class='name-info'>朱佳敏  12345678901</view>
-    </view>
-    <view class='item border-b'>
-      <view>杭州市在那边好结果很高做空工具和几个孩子就会跟着更好看</view>
-      <view class='name-info'>朱佳敏  12345678901</view>
+    <view wx:for="{{addressList}}" wx:key="{{index}}" bindtap="back" data-item="{{item}}" class='item'>
+      <view>{{item.address}}</view>
+      <view class='name-info'>{{item.name}}  {{item.phone}}</view>
     </view>
   </view>
 </view>

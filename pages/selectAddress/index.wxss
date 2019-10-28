@@ -18,7 +18,13 @@
 }
 
 .item {
+  height: 100%;
   padding-top: 24rpx;
+  border-bottom: 2rpx solid #e0e0e0;
+}
+
+.item:last-child {
+  border-bottom: none;
 }
 
 .name-info {
