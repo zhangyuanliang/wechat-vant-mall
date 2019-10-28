@@ -24,7 +24,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.8.3",
 	"appid": "wxad1ba0b67b11603a",
-	"projectname": "ely-material-admin",
+	"projectname": "ely-material-service",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

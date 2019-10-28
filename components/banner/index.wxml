@@ -8,7 +8,7 @@
   indicator-active-color="#FEAD19"
   style="height: 310rpx;"
 >
-  <block wx:for="{{images}}" wx:key="*this">
+  <block wx:for="{{images}}" wx:key="index">
     <swiper-item>
       <image src="{{item}}" class="banner-img"></image>
     </swiper-item>

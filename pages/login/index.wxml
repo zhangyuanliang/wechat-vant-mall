@@ -5,7 +5,7 @@
     <view class="login-title"><text>登录</text></view>
     <view class="flex-v iphone-wrap">
       <image src="/images/login/iphone-icon@2x.png"></image>
-      <view class='iphone-input'>
+      <view class="iphone-input">
         <input value="{{phone}}" bindinput="changeInput" data-type="phone" placeholder="请输入手机号码"></input>
       </view>
     </view>

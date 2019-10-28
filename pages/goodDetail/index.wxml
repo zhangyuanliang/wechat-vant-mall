@@ -10,7 +10,7 @@
     indicator-active-color="#FEAD19"
     style="height: 500rpx;"
   >
-    <block wx:for="{{images}}" wx:key="*this">
+    <block wx:for="{{images}}" wx:key="index">
       <swiper-item>
         <image src="{{item}}" class="banner-img"></image>
       </swiper-item>
@@ -60,7 +60,7 @@
 >
   <view style="height: 100%;overflow-y: auto">
     <view class="item">
-      <image class="goods-img" src="/images/banner@2x.png"></image>
+      <image class="goods-img" src="/images/home/good-1.png"></image>
       <view class='pop-good-info'>
         <view>
           <view class="name"><text>{{goodItem.name}}</text></view>

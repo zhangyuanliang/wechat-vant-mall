@@ -12,7 +12,7 @@
 }
 
 .disabled {
-  border: 1px solid #8c8c8d;
+  border: 2rpx solid #8c8c8d;
   color: #fff;
   background: #8c8c8d;
 }

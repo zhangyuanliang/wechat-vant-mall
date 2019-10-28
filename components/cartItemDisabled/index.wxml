@@ -3,7 +3,7 @@
   <view class="disable-icon">
     <text>失效</text>
   </view>
-  <image class="goods-img" src="/images/banner@2x.png"></image>
+  <image class="goods-img" src="{{goodItem.src}}"></image>
   <view class="good-info">
     <view>
       <view style="line-height: 46rpx; color: #727272"><text>{{goodItem.name}}</text></view>

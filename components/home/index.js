@@ -2,16 +2,16 @@
 Page({
   data: {
     images: [
-      '/images/banner@2x.png',
-      '/images/banner@2x.png'
+      '/images/home/banner.png',
+      '/images/home/banner.png'
     ],
     aciveType: 'water',
     activeText: 'all',
     goodList: [
-      { id: 1, name: '商品名称1', src: '/images/banner@2x.png'},
-      { id: 2, name: '商品名称2', src: '/images/banner@2x.png' },
-      { id: 3, name: '商品名称3', src: '/images/banner@2x.png' },
-      { id: 4, name: '商品名称4', src: '/images/banner@2x.png' },
+      { id: 1, name: '商品名称1', src: '/images/home/good-1.png'},
+      { id: 2, name: '商品名称2', src: '/images/home/good-2.png' },
+      { id: 3, name: '商品名称3', src: '/images/home/good-1.png' },
+      { id: 4, name: '商品名称4', src: '/images/home/good-2.png' },
     ]
   },
 

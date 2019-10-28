@@ -80,7 +80,7 @@
 .login-btn-wrap {
   width: 100%;
   position: relative;
-  top: 69rpx;
+  top: 45rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,7 +112,7 @@
 }
 
 .input::placeholder {
-  font-size: 28px;
+  font-size: 28rpx;
   font-weight: 500;
-  color:#727272;
+  color: #727272;
 }

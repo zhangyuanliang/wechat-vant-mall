@@ -2,20 +2,20 @@
 Page({
   data: {
     images: [
-      '/images/banner@2x.png',
-      '/images/banner@2x.png'
+      '/images/home/good-1.png',
+      '/images/home/good-2.png'
     ],
     num: 8,
     isShowPopup: true,
     activeIndex: 1,
-    goodItem: { 
-      id: 1, 
-      name: '商品名称1', 
-      num: 1, 
-      price: 199.00, 
+    goodItem: {
+      id: 1,
+      name: '商品名称1',
+      num: 1,
+      price: 199.00,
       active: true,
       styles: [
-        { id: 1, name: '保温管'},
+        { id: 1, name: '保温管' },
         { id: 2, name: '双活接球阀' },
         { id: 3, name: '保温管' },
         { id: 4, name: '保温管' },

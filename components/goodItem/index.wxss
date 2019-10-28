@@ -11,7 +11,7 @@
 
 .img-wrap image {
   width: 340rpx;
-  height: 320rpx;
+  height: 264rpx;
   background: #d8d8d8;
   border-radius: 8rpx 8rpx 0px 0px;
 }

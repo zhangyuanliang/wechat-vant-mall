@@ -2,15 +2,15 @@
 Page({
   data: {
     goodsList: [
-      { id: 1, name: '商品名称1', num: 1, price: '199.00', active: true },
-      { id: 2, name: '商品名称2', num: 2, price: '199.00', active: true }
+      { id: 1, name: '商品名称1', num: 1, price: '199.00', active: true, src: '/images/home/good-1.png'},
+      { id: 2, name: '商品名称2', num: 2, price: '199.00', active: false, src: '/images/home/good-2.png'}
     ],
     activeAll: true,
     totalPrice: 0,
     selectedNum: 0,
   },
   onLoad: function (options) {
-
+    
   },
   onReady: function () {
     

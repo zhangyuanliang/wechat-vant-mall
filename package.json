@@ -1,5 +1,5 @@
 {
-  "name": "ely-material-admin",
+  "name": "ely-material-service",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -9,6 +9,8 @@
   "author": "zhangyuanliang",
   "license": "ISC",
   "dependencies": {
+    "flyio": "^0.6.14",
+    "qs": "^6.9.0",
     "vant-weapp": "^1.0.0-beta.0"
   }
 }

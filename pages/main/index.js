@@ -1,10 +1,14 @@
+import {
+  tabbarList
+} from '../../utils/constant.js'
+
 const app = getApp()
 Page({
   data: {
     // 购物车
     goodsList: [
-      { id: 1, name: '商品名称1', num: 1, price: 199.00, active: true },
-      { id: 2, name: '商品名称2', num: 2, price: 199.00, active: true }
+      { id: 1, name: '商品名称1', num: 1, price: 199.00, active: true, src: '/images/home/good-1.png' },
+      { id: 2, name: '商品名称2', num: 2, price: 199.00, active: true, src: '/images/home/good-2.png' }
     ],
     activeAll: true,
     totalPrice: 0,
@@ -13,37 +17,9 @@ Page({
     isEditing: false,
     login: true,
     // 底部tabbar
-    tabbar: [
-      {
-        name: "首页",
-        tips: '',
-        selected: true,
-        icon: {
-          normal: '/images/tabbar/home.png',
-          active: '/images/tabbar/home-active.png'
-        }
-      },
-      {
-        name: "购物车",
-        tips: '12',
-        selected: false,
-        icon: {
-          normal: '/images/tabbar/cart.png',
-          active: '/images/tabbar/cart-active.png'
-        }
-      },
-      {
-        name: "我的",
-        tips: '',
-        selected: false,
-        icon: {
-          normal: '/images/tabbar/mine.png',
-          active: '/images/tabbar/mine-active.png'
-        }
-      },
-    ],
+    tabbar: tabbarList,
     tabbarHeight: app.isIPhoneX ? 84 : 50, // 底部tabbar高度
-    activeIndex: 2,  // 选中的tab
+    activeIndex: 0,  // 选中的tab
     scrollTopArray: [], // 记录每个页面的滚动位置
   },
   onLoad: function (options) {
