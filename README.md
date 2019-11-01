@@ -2,7 +2,7 @@
 电商微信小程序/购物车
 
 #### 展示效果：
-![Image text](https://github.com/zhangyuanliang/wechat-vant-mall/blob/master/cut/cut.jpeg)
+![Image text](https://github.com/zhangyuanliang/wechat-vant-mall/blob/master/cut/cut.png)
 
 ## Build Setup
 
