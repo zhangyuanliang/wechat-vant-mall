@@ -24,7 +24,6 @@ request.interceptors.request.use((request) => {
 request.interceptors.response.use(
   res => {
     if (res.data) {
-      const orderStatus = res.data.data
       switch (res.data.code) {
         case 'A00002':
           return Promise.reject(res.data)

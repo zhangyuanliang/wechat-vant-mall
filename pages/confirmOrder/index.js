@@ -42,7 +42,7 @@ Page({
     // wx.requestPayment({
     //   timeStamp: '',
     //   nonceStr: '',
-    //   package: '',
+    //   package: `prepay_id=${data.prepay_id}`,
     //   signType: 'MD5',
     //   paySign: '',
     //   success(res) { },

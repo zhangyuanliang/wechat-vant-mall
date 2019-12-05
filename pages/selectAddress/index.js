@@ -6,19 +6,10 @@ Page({
       { id: 1, name: '朱佳敏', address: '杭州市在那边好结果很高做空工具和几个', phone: '1321231231' }
     ]
   },
-  onLoad: function (options) {
-
-  },
-  onReady: function () {
-
-  },
   onShow: function () {
 
   },
   onHide: function () {
-
-  },
-  onUnload: function () {
 
   },
   toAdd: function() {

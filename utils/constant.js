@@ -1,20 +1,9 @@
 // export const BASE_URL = 'https://apidev.ly.work/' // 开发
 export const BASE_URL = 'https://apitest.ly.work/' // 测试
-// export const BASE_URL = 'https://api.ly.work/' // 正式环境
 
 export const defaultTimeout = 10000
 
 export const defaultContentType = 'application/x-www-form-urlencoded;charset=UTF-8'
-
-export const statusCodeMap = {
-  301: '永久重定向',
-  400: '请求语法错误',
-  401: '未授权',
-  403: '禁止访问',
-  404: '没有资源',
-  500: '服务器错误',
-  503: '服务器错误'
-}
 
 export const OPPEN_ID = 'OPPEN_ID'
 export const USER_INFO = 'USER_INFO'
@@ -28,6 +17,7 @@ export const ORDER_STATUS = {
   5: '已取消'
 }
 
+// 底部导航数据
 export const tabbarList = [
   {
     name: "首页",

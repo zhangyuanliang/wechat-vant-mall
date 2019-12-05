@@ -14,12 +14,6 @@ Page({
     isShowDialog: false,
     address: {}
   },
-  onLoad: function (options) {
-    
-  },
-  onReady: function () {
-
-  },
   onShow: function () {
     this.setData({
       address: app.globalData.orderAddress
@@ -28,19 +22,17 @@ Page({
   onHide: function () {
 
   },
-  onUnload: function () {
-
-  },
   changeRadio: function () {
     this.setData({
       active: !this.data.active
     })
   },
   wxPay: function () {
+    // 下面的数据需要请求后端接口获取
     // wx.requestPayment({
     //   timeStamp: '',
     //   nonceStr: '',
-    //   package: '',
+    //   package: `prepay_id=${data.prepay_id}`,
     //   signType: 'MD5',
     //   paySign: '',
     //   success(res) { },

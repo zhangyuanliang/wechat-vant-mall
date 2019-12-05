@@ -41,9 +41,6 @@ Page({
     this.calculateSelectedGoods()
     this.calculatePrice()
   },
-  onHide: function () {
-
-  },
   /** 购物车 start */
   hasNoSelected: function () {
     return this.data.goodsList.find(it => {
@@ -199,16 +196,4 @@ Page({
       tabbar: this.data.tabbar,
     })
   },
-  onReady: function () {
-
-  },
-  onUnload: function () {
-
-  },
-  onPullDownRefresh: function () {
-
-  },
-  onReachBottom: function () {
-
-  }
 })
