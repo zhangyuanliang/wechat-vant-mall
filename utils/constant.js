@@ -1,8 +1,6 @@
-// export const BASE_URL = 'http://172.31.98.83:8087/'
-// export const BASE_URL = 'http://172.31.99.66:8087/'// 勇波
-// export const BASE_URL = 'https://apidev.ely.work/' // 开发
-export const BASE_URL = 'https://apitest.ely.work/' // 测试
-// export const BASE_URL = 'https://api.ely.work/' // 正式环境
+// export const BASE_URL = 'https://apidev.ly.work/' // 开发
+export const BASE_URL = 'https://apitest.ly.work/' // 测试
+// export const BASE_URL = 'https://api.ly.work/' // 正式环境
 
 export const defaultTimeout = 10000
 
