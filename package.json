@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "flyio": "^0.6.14",
-    "qs": "^6.9.0",
+    "qs": "^6.9.7",
     "vant-weapp": "^1.0.0-beta.0"
   }
 }
